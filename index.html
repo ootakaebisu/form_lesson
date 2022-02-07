@@ -27,9 +27,121 @@
             <p class="is-defaultText">アカウント情報</p>
           </div>
           <form class="form-content" action="#" method="POST">
-            <!--
-              ここに続きのHTMLを書いていきましょう
-            -->
+            <!-- ここから -->
+            <div class="row name_box">
+              <div class="name is-halfWidth">
+                <p class="label_text">
+                  名字<span class="alert"> ※</span>
+                </p>
+                <input type="text" name="name" class="input_area is-fullWidth" required>
+              </div>
+              <div class="name is-halfWidth">
+                <p class="label_text">
+                  名前<span class="alert"> ※</span>
+                </p>
+                <input type="text" name="name" class="input_area is-fullWidth" required>
+              </div>
+            </div>
+
+            <div class="row gender">
+              <p class="label_text">
+                性別
+              </p>
+              <!-- labelとinputをforとidで繋ぐverの記述 -->
+              <div class="gender_contents">
+                <input type="radio" name="gender" value="male" class="" id="male">
+                <label for="male" class="gender_content">男性</label>
+                <span class="radio_btn"></span>
+
+                <input type="radio" name="gender" value="female" class="" id="female">
+                <label for="female" class="gender_content">女性</label>
+                <span class="radio_btn"></span>
+
+                <input type="radio" name="gender" value="other" class="" id="other">
+                <label for="other" class="gender_content">その他</label>
+                <span class="radio_btn"></span>
+              </div>
+            </div>
+
+            <div class="row origin is-halfWidth">
+              <p for="origin" class="label_text">
+                出身
+              </p>
+              <div class="select-wrapper is-fullWidth">
+                <select name="origin" size="1" class="input_area is-fullWidth">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row email">
+              <p class="label_text">
+                Eメール<span class="alert"> ※</span>
+              </p>
+              <input type="email" name="email" placeholder="ex) hoge@example.com" class="input_area is-fullWidth" required>
+            </div>
+
+            <div class="row tel">
+              <p class="label_text">
+                電話番号
+              </p>
+              <input type="tel" name="tel" placeholder="ex) 09012345678" class="input_area is-fullWidth">
+            </div>
+
+            <div class="row password">
+              <p class="label_text">
+                パスワード<span class="alert"> ※</span>
+              </p>
+              <input type="password" name="password" class="input_area is-fullWidth" required>
+            </div>
+
+            <div class="row password">
+              <p class="label_text">
+                パスワード(確認用)<span class="alert"> ※</span>
+              </p>
+              <input type="password" name="password" class="input_area is-fullWidth" required>
+            </div>
+
+            <div class="row course">
+              <p class="label_text">
+                 希望コース
+              </p>
+              <!-- labelの中にinputを入れるverの記述 -->
+              <div class="course_option">
+                <label class="course_option_text">
+                  <input type="checkbox" name="course" value="">
+                  <span class="checkmark"></span>フロントエンド
+                </label>
+              </div>
+              <div class="course_option">
+                <label class="course_option_text">
+                  <input type="checkbox" name="course" value="">
+                  <span class="checkmark"></span>バックエンド
+                </label>
+              </div>
+              <div class="course_option">
+                <label class="course_option_text">
+                  <input type="checkbox" name="course" value="">
+                  <span class="checkmark"></span>アプリ
+                </label>
+              </div>
+            </div>
+
+            <div class="row remarks">
+              <p class="label_text">
+                  備考
+              </p>
+              <textarea name="remarks" rows="3" placeholder="何かあればご記入ください" class="input_area is-fullWidth"></textarea>
+            </div>
+
+            <div class="row">
+              <button type="submit" name="remarks" class="input_area is-fullWidth button submit-button">アカウント作成</button>
+            </div>
+
+            <!-- ここまで -->
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
