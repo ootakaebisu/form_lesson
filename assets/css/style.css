@@ -326,13 +326,18 @@ select:focus {
 
 /* 作成ボタン */
 .submit-button {
-  border: 1px solid #01bfbd;
+  border: 1px solid #d9d9d9;
   background-color: #01bfbd;
   color: #fff;
 }
 
 .submit-button:hover {
   background-color: #01a6a4;
+}
+
+.submit-button:active {
+  color: #01a6a4;
+  background-color: #fff;
 }
 
 /* 追加-個別スタイル（ここまで） */
